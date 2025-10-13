@@ -1,19 +1,7 @@
 {
-  "name": "com.dxmxntxr.ropesimulation",
+  "name": "com.dxmxntxr.ropeSimulation",
   "version": "0.0.1",
   "displayName": "Rope Simulation",
   "description": "Rope Simulation",
-  "unity": "2021.3",
-  "author": {
-    "name": "DXMXNTXR",
-    "email": "sony.ba6@gmail.com",
-    "url": "https://github.com/romaster28"
-  },
-  "samples": [
-    {
-      "displayName": "Sample",
-      "description": "Line Renderer Visualize",
-      "path": "Samples"
-    }
-  ]
+  "unity": "2021.3"
 }
