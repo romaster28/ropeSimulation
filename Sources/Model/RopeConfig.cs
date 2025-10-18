@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class RopeConfig
+public class RopeConfig : IRopeConfig
 {
     private readonly int _segments;
     private readonly float _segmentLength;

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class RopeSimulation
 {
-    private readonly RopeConfig _config;
+    private readonly IRopeConfig _config;
     private readonly Vector3[] _segments;
     private readonly Vector3[] _old;
     private readonly bool[] _blocked;
 
-    public RopeSimulation(RopeConfig config, Vector3 startPos)
+    public RopeSimulation(IRopeConfig config, Vector3 startPos)
     {
         _config = config ?? throw new ArgumentNullException(nameof(config));
         _segments = new Vector3[config.Segments];
@@ -24,6 +24,7 @@ public class RopeSimulation
     }
 
     public IEnumerable<Vector3> GetSegments() => _segments;
+    public int SegmentsCount => _segments.Length;
 
     public void BlockSegment(int segment, Vector3 position)
     {
