@@ -4,8 +4,6 @@ using UnityEngine;
 [RequireComponent(typeof(LineRenderer))]
 public class RopeLineRendererVisualizer : MonoBehaviour
 {
-    [SerializeField] private RopeConfigSerializable _config;
-    
     private RopeSimulation _simulation;
     private LineRenderer _renderer;
 
@@ -26,6 +24,9 @@ public class RopeLineRendererVisualizer : MonoBehaviour
     
     private void LateUpdate()
     {
+        if (_renderer == null)
+            return;
+        
         _renderer.positionCount = _simulation.SegmentsCount;
         
         int index = 0;
