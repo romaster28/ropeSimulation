@@ -17,12 +17,10 @@ public class RopeLineRendererVisualizer : MonoBehaviour
     private void Awake()
     {
         _renderer = GetComponent<LineRenderer>();
-        SetRope(new RopeSimulation(_config, transform.position));
     }
 
     private void FixedUpdate()
     {
-        _simulation.BlockSegment(0, transform.position);
         _simulation?.Simulate();
     }
     
