@@ -27,6 +27,9 @@ public class RopeLineRendererVisualizer : MonoBehaviour
         if (_renderer == null)
             return;
         
+        if (_simulation == null)
+            return;
+        
         _renderer.positionCount = _simulation.SegmentsCount;
         
         int index = 0;
