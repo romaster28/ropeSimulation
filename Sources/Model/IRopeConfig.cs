@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 
-public interface IRopeConfig
+namespace DR.RopeSimulation
 {
-    int Segments { get; }
-    float SegmentLength { get; }
-    float Damping { get; }
-    int NumOfConstraintRuns { get; }
-    Vector3 Gravity { get; }
+    public interface IRopeConfig
+    {
+        int Segments { get; }
+        float SegmentLength { get; }
+        float Damping { get; }
+        int NumOfConstraintRuns { get; }
+        Vector3 Gravity { get; }
+    }
 }

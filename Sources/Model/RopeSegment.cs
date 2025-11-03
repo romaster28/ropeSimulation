@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 
-public struct RopeSegment
+namespace DR.RopeSimulation
 {
-    public Vector3 Position { get; set; }
-    public Vector3 Old { get; set; }
-
-    public RopeSegment(Vector3 position)
+    public struct RopeSegment
     {
-        Position = position;
-        Old = position;
+        public Vector3 Position { get; set; }
+        public Vector3 Old { get; set; }
+
+        public RopeSegment(Vector3 position)
+        {
+            Position = position;
+            Old = position;
+        }
     }
 }
