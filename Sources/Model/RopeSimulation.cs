@@ -28,6 +28,11 @@ namespace DR.RopeSimulation
         public IEnumerable<Vector3> GetSegments() => _segments;
         public int SegmentsCount => _segments.Length;
 
+        public Vector3 GetSegment(int index)
+        {
+            return _segments[index];
+        }
+
         public void BlockSegment(int segment, Vector3 position)
         {
             if (segment < 0 || segment >= _segments.Length)
